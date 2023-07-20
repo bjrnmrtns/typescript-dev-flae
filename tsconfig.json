@@ -10,6 +10,6 @@
 		"outDir": "./build",
 		"sourceMap": true
 	},
-  "include": ["./js/*"],
+  "include": ["./ts/*"],
   "exclude": ["node_modules"]
 }

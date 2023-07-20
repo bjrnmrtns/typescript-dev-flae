@@ -14,9 +14,12 @@
     in {
       devShells.default = pkgs.mkShell {
         buildInputs = [
+          pkgs.python3
           pkgs.nodejs
           pkgs.nodePackages.pnpm
           pkgs.nodePackages.typescript
+          pkgs.nodePackages.eslint
+          pkgs.nodePackages.prettier
           pkgs.nodePackages.typescript-language-server
         ];
       };

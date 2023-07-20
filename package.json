@@ -1,0 +1,18 @@
+{
+	"private": true,
+	"scripts": {
+		"start": "python3 -m http.server 1337",
+		"dev": "npx tsc-watch --noClear -p ./tsconfig.json --onSuccess \"npm start\"",
+		"format": "npx prettier --config .prettierrc 'js/*.ts' --write",
+		"build": "npx tsc",
+		"lint": "npx eslint js/*.ts"
+	},
+	"dependencies": {
+		"todomvc-app-css": "^2.0.0"
+	},
+	"dependenciesComments": {
+		"todomvc-app-css": "TodoMVC boilerplate CSS (not in use, just copy/pasted into css/index.css)"
+	},
+	"devDependencies": {
+	}
+}
